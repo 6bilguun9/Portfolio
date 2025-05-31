@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Home from "./pages/Home";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
