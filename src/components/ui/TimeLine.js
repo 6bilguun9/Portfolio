@@ -1,5 +1,5 @@
 import steppe from "../../assets/steppelink.png";
-import ictGroup from "../../assets/ictgroup.png";
+import ictGroup from "../../assets/ictGroup.png";
 
 export const TimeLine = [
   {
