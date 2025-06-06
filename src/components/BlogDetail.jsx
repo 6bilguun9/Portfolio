@@ -38,16 +38,18 @@ const BlogDetail = () => {
   if (!post) return <div>Post not found</div>;
 
   return (
-    <div className="p-5 w-full min-h-screen mx-auto bg-neutral-950 text-neutral-200 gap-4 flex flex-col items-center">
-      <Link to="/Blog" className="text-neutral-300 mb-4 block">
-        ← Back to all posts
-      </Link>
+    <div className="p-5 min-h-screen mx-auto bg-neutral-950 text-neutral-200 gap-4 flex flex-col items-center">
+      <div className="w-1/2 flex flex-col text-center">
+        <Link to="/Blog" className="text-neutral-300 mb-4 block">
+          ← Back to all posts
+        </Link>
 
-      <h1 className="text-4xl font-bold">{post.title}</h1>
-      <p className="text-sm text-neutral-500 mb-6">{post.date}</p>
+        <h1 className="text-4xl font-bold">{post.title}</h1>
+        <p className="text-sm text-neutral-500 mb-6">{post.date}</p>
 
-      <div className="prose prose-invert">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <div className="prose prose-invert text-neutral-200 text-lg">
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );
