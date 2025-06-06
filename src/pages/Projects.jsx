@@ -7,13 +7,13 @@ function Projects() {
       <div className="w-1/2 flex flex-col gap-4">
         <h1 className="font-bold text-3xl text-sky-50">Projects</h1>
         <h1 className="text-neutral-400">
-          These are my projects on which I try to work actively
+          Coming Soon! This page is under construction.
         </h1>
-        <div>
+        {/* <div>
           <div>
             <ProjectCard />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

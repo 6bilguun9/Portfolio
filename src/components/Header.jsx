@@ -16,6 +16,7 @@ function Header(props) {
       location.pathname === "/Projects" ||
       location.pathname === "/Blog" ||
       location.pathname === "/Contact" ||
+      location.pathname === "/Cert" ||
       location.pathname.startsWith("/Projects/") ||
       location.pathname.startsWith("/blog/")
     ) {
@@ -34,6 +35,7 @@ function Header(props) {
     location.pathname === "/Projects" ||
     location.pathname === "/Blog" ||
     location.pathname === "/Contact" ||
+    location.pathname === "/Cert" ||
     location.pathname.startsWith("/Projects/") ||
     location.pathname.startsWith("/blog/")
       ? "bg-neutral-950"
@@ -54,6 +56,14 @@ function Header(props) {
             className="h-8 w-20 flex justify-center items-center  hover:bg-neutral-950 rounded-sm hover:text-white transition-colors duration-300"
           >
             Projects
+          </Link>
+        </motion.div>
+        <motion.div style={{ color: textColor }}>
+          <Link
+            to="/Cert"
+            className="h-8 w-24 flex justify-center items-center  hover:bg-neutral-950 rounded-sm hover:text-white transition-colors duration-300"
+          >
+            Certificates
           </Link>
         </motion.div>
         <motion.div style={{ color: textColor }}>

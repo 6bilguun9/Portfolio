@@ -12,8 +12,8 @@ function Home() {
       <PortfolioAnimation />
       <div className="bg-neutral-950 w-full flex justify-center flex-col items-center gap-4 p-10">
         <About />
-        <BriefPro />
-        <BriefAbt />
+        {/* <BriefPro /> */}
+        <div className="text-neutral-700">Coming Soon</div>
       </div>
       <div className="bg-neutral-950 w-full flex justify-center items-center p-20">
         <div className="w-1/2 flex justify-between">

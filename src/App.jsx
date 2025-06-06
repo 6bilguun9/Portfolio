@@ -7,9 +7,9 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ProDetail from "./components/ProDetail";
 import BlogDetail from "./components/BlogDetail";
+import Cert from "./pages/Cert";
 
 import { DotPattern } from "@/components/magicui/dot-pattern";
-import { useState } from "react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -49,6 +49,10 @@ function App() {
     {
       path: "/Blog/:slug",
       element: <BlogDetail />,
+    },
+    {
+      path: "/Cert",
+      element: <Cert />,
     },
   ]);
 
