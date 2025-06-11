@@ -18,7 +18,7 @@ function Header(props) {
       location.pathname === "/Contact" ||
       location.pathname === "/Cert" ||
       location.pathname.startsWith("/Projects/") ||
-      location.pathname.startsWith("/blog/")
+      location.pathname.startsWith("/Blog/")
     ) {
       textColor.set("#f0f9ff");
     } else {
@@ -37,7 +37,7 @@ function Header(props) {
     location.pathname === "/Contact" ||
     location.pathname === "/Cert" ||
     location.pathname.startsWith("/Projects/") ||
-    location.pathname.startsWith("/blog/")
+    location.pathname.startsWith("/Blog/")
       ? "bg-neutral-950"
       : "bg-transparent";
   return (

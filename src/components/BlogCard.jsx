@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BlogCard = ({ title, date, content, slug }) => {
   return (
     <Link
-      to={`/blog/${slug}`}
+      to={`/Blog/${slug}`}
       className="rounded-sm border-2 text-neutral-200 p-5 flex items-center justify-between"
     >
       <div className="text-neutral-300">
