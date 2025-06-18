@@ -11,7 +11,13 @@ const BlogCard = ({ title, date, content, slug }) => {
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="text-sm text-neutral-500">{date}</p>
         <div className="line-clamp-3 text-neutral-400">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              img: () => null, // ✂️ hides image previews
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       </div>
     </Link>

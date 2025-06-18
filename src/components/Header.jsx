@@ -14,7 +14,7 @@ function Header(props) {
   const closeMenu = () => setIsMenuOpen(false);
 
   const textColor = useMotionValue("#101010");
-  const specialRoute = ["/Projects", "/Blog", "/Contact", "/Cert"];
+  const specialRoute = ["/Projects", "/Blog", "/blog", "/Contact", "/Cert"];
   const isSpecial =
     specialRoute.includes(location.pathname) ||
     specialRoute.some((r) => location.pathname.startsWith(r + "/"));
@@ -23,7 +23,7 @@ function Header(props) {
     : "bg-neutral-200 text-neutral-950";
 
   useEffect(() => {
-    const specialRoute = ["/Projects", "/Blog", "/Contact", "/Cert"];
+    const specialRoute = ["/Projects", "/Blog", "/blog", "/Contact", "/Cert"];
     if (
       specialRoute.includes(location.pathname) ||
       specialRoute.some((r) => location.pathname.startsWith(r + "/"))
