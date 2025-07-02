@@ -38,7 +38,7 @@ function Header(props) {
 
   const bgColour = isSpecial ? "bg-neutral-950" : "bg-transparent";
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky left-0 right-0 top-0 z-50 h-auto max-h-screen overflow-visible">
       <div
         className={`relative top-0 z-50 backdrop-blur-sm py-3 px-10 w-full flex items-center justify-between ${bgColour} shadow-md shadow-inherit-500`}
       >
@@ -88,7 +88,7 @@ function Header(props) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           className={`
-            top-full left-0 w-full md:hidden z-40
+            relative z-40
             ${mobileBg}
             border border-neutral-700
           `}
