@@ -12,7 +12,6 @@ function Blog() {
 
     const loadPosts = async () => {
       const postsData = [];
-
       for (const path in markdownFiles) {
         const fileName = path.split("/").pop();
         const slug = fileName.replace(/\.md$/, "");
